@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customers - CRM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>CRM System</h2>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="customers.html">Customers</a>
+      <a href="leads.html">Leads</a>
+      <a href="followups.html">Follow-ups</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Customers</h1>
+
+    <div class="form-box">
+      <input type="text" id="custName" placeholder="Customer Name">
+      <input type="text" id="custEmail" placeholder="Email">
+      <input type="text" id="custPhone" placeholder="Phone">
+      <input type="text" id="custCompany" placeholder="Company">
+      <button onclick="addCustomer()">Add Customer</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Company</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="customerTableBody">
+        <!-- Rows are added here by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Show existing customers as soon as page loads
+    loadCustomers();
+  </script>
+</body>
+</html>

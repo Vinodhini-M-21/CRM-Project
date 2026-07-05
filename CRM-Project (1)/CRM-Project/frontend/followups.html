@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Follow-ups - CRM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>CRM System</h2>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="customers.html">Customers</a>
+      <a href="leads.html">Leads</a>
+      <a href="followups.html">Follow-ups</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Follow-ups</h1>
+
+    <div class="form-box">
+      <input type="text" id="fuCustomerName" placeholder="Customer Name">
+      <input type="date" id="fuDate">
+      <input type="text" id="fuNotes" placeholder="Notes">
+      <select id="fuStatus">
+        <option value="Pending">Pending</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <button onclick="addFollowUp()">Add Follow-up</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Date</th>
+          <th>Notes</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="followupTableBody">
+        <!-- Rows are added here by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadFollowUps();
+  </script>
+</body>
+</html>

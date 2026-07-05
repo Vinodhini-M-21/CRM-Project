@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Leads - CRM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>CRM System</h2>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="customers.html">Customers</a>
+      <a href="leads.html">Leads</a>
+      <a href="followups.html">Follow-ups</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Leads</h1>
+
+    <div class="form-box">
+      <input type="text" id="leadName" placeholder="Lead Name">
+      <input type="text" id="leadEmail" placeholder="Email">
+      <input type="text" id="leadPhone" placeholder="Phone">
+      <select id="leadStatus">
+        <option value="New">New</option>
+        <option value="Contacted">Contacted</option>
+        <option value="Converted">Converted</option>
+        <option value="Lost">Lost</option>
+      </select>
+      <input type="text" id="leadSource" placeholder="Source (e.g. Website)">
+      <button onclick="addLead()">Add Lead</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Status</th>
+          <th>Source</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="leadTableBody">
+        <!-- Rows are added here by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadLeads();
+  </script>
+</body>
+</html>

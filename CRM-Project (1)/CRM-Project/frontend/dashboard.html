@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - CRM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>CRM System</h2>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="customers.html">Customers</a>
+      <a href="leads.html">Leads</a>
+      <a href="followups.html">Follow-ups</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Dashboard</h1>
+    <p>Welcome back! Here is a quick summary of your CRM data.</p>
+
+    <div class="card-row">
+      <div class="card">
+        <h3>Total Customers</h3>
+        <p id="customerCount">0</p>
+      </div>
+      <div class="card">
+        <h3>Total Leads</h3>
+        <p id="leadCount">0</p>
+      </div>
+      <div class="card">
+        <h3>Total Follow-ups</h3>
+        <p id="followupCount">0</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Load the live counts as soon as this page opens
+    updateDashboardCounts();
+  </script>
+</body>
+</html>
