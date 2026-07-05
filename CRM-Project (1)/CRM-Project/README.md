@@ -1,4 +1,4 @@
-# CRM System (Customer Management System)
+# CRM System (Customer Relationship Management System)
 
 A simple full-stack CRM built with plain HTML/CSS/JS frontend, Java JDBC backend, and MySQL database. No frameworks.
 
