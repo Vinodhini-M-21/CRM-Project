@@ -1,8 +1,3 @@
-// ==========================================
-// FollowUp.java
-// Model class for a "Follow-up" task with a customer
-// ==========================================
-
 public class FollowUp {
     private int id;
     private String customerName;
