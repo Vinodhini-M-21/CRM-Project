@@ -1,7 +1,3 @@
-// ==========================================
-// Lead.java
-// Model class for a "Lead" (a potential customer)
-// ==========================================
 
 public class Lead {
     private int id;
