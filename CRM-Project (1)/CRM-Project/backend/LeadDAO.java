@@ -1,8 +1,3 @@
-// ==========================================
-// LeadDAO.java
-// Handles all database operations (CRUD) for the "leads" table.
-// ==========================================
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
