@@ -1,8 +1,4 @@
-// ==========================================
-// Customer.java
-// This is a simple "model" class.
-// It just holds customer data in Java (like a mini spreadsheet row).
-// ==========================================
+
 
 public class Customer {
     private int id;
