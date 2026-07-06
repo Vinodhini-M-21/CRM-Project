@@ -1,9 +1,3 @@
--- ==========================================
--- CRM SYSTEM DATABASE SCHEMA
--- ==========================================
--- Run this file in MySQL Workbench or terminal:
---   mysql -u root -p < crm.sql
--- ==========================================
 
 CREATE DATABASE IF NOT EXISTS crm_db;
 USE crm_db;
@@ -39,7 +33,7 @@ CREATE TABLE IF NOT EXISTS followups (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- ---------- SAMPLE DATA (optional, for testing) ----------
+-- ---------- SAMPLE DATA ----------
 INSERT INTO customers (name, email, phone, company) VALUES
 ('Ravi Kumar', 'ravi@example.com', '9876543210', 'ABC Traders'),
 ('Priya Sharma', 'priya@example.com', '9123456780', 'XYZ Corp');
