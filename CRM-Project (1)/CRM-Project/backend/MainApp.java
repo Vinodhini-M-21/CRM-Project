@@ -1,9 +1,3 @@
-// ==========================================
-// MainApp.java
-// This is a simple console program to TEST the backend.
-// Run this file to prove your Java + MySQL backend works
-// (useful to demo during your Zoho interview).
-// ==========================================
 
 import java.util.List;
 import java.util.Scanner;
