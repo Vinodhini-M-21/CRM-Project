@@ -1,9 +1,3 @@
-// ==========================================
-// DBConnection.java
-// This class connects Java to MySQL database.
-// Every DAO class uses this to talk to the database.
-// ==========================================
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
