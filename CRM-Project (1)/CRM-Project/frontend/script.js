@@ -1,11 +1,3 @@
-// ==========================================
-// script.js
-// This file controls ALL frontend logic.
-// Data now comes from the Java ApiServer (which talks
-// to MySQL) instead of localStorage — so anything you
-// add here will actually appear in your XAMPP database.
-// ==========================================
-
 const API_BASE = "http://localhost:8080/api";
 
 
