@@ -1,10 +1,3 @@
-// ==========================================
-// JsonUtil.java
-// Tiny helper to read/write simple JSON.
-// (No external library needed — keeps the
-// project dependency-free apart from MySQL.)
-// ==========================================
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
