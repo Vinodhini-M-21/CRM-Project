@@ -3,8 +3,6 @@ const API_BASE = "http://localhost:8080/api";
 
 // ---------------------------------------------
 // SECTION 1: LOGIN / LOGOUT
-// (still simple hardcoded check — fine for a student demo)
-// ---------------------------------------------
 
 function login() {
   const username = document.getElementById("username").value.trim();
