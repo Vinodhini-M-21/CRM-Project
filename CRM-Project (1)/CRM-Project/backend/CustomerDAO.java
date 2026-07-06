@@ -1,10 +1,3 @@
-// ==========================================
-// CustomerDAO.java
-// DAO = "Data Access Object"
-// This class contains all the database operations (CRUD)
-// for the "customers" table.
-// ==========================================
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
