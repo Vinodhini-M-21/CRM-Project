@@ -1,17 +1,3 @@
-// ==========================================
-// ApiServer.java
-// This is the "bridge" between your website and MySQL.
-//
-// It starts a small web server (using Java's built-in
-// HttpServer — no Spring Boot needed) that your frontend
-// JavaScript talks to using fetch().
-//
-// Flow:
-//   Browser (script.js) --> ApiServer (this file) --> DAO classes --> MySQL
-//
-// Run this file (instead of MainApp.java) whenever you
-// want the website to actually save data into MySQL.
-// ==========================================
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;
